@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="UnidecodeSharpFork">
+      <HintPath>..\..\..\..\Documents\unidecodesharpfork\UnidecodeSharpFork\bin\Debug\UnidecodeSharpFork.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Mediaburst.Text.GSMEncoding" Version="1.0.0" />
+    <PackageReference Include="Unidecode.NET" Version="1.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CopilotSmartEncodingClone\CopilotSmartEncodingClone.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="UnidecodeSharp">
+      <HintPath>..\..\..\..\Desktop\UnidecodeSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="UnidecodeSharpFork">
+      <HintPath>..\..\..\..\Documents\unidecodesharpfork\UnidecodeSharpFork\bin\Debug\UnidecodeSharpFork.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

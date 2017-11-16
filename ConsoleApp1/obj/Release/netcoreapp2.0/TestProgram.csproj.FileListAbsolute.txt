@@ -1,0 +1,13 @@
+/Users/benjaminshapiro/Downloads/CopilotSmartEncodingClone/ConsoleApp1/bin/Release/netcoreapp2.0/TestProgram.deps.json
+/Users/benjaminshapiro/Downloads/CopilotSmartEncodingClone/ConsoleApp1/bin/Release/netcoreapp2.0/TestProgram.runtimeconfig.json
+/Users/benjaminshapiro/Downloads/CopilotSmartEncodingClone/ConsoleApp1/bin/Release/netcoreapp2.0/TestProgram.runtimeconfig.dev.json
+/Users/benjaminshapiro/Downloads/CopilotSmartEncodingClone/ConsoleApp1/bin/Release/netcoreapp2.0/TestProgram.dll
+/Users/benjaminshapiro/Downloads/CopilotSmartEncodingClone/ConsoleApp1/bin/Release/netcoreapp2.0/TestProgram.pdb
+/Users/benjaminshapiro/Downloads/CopilotSmartEncodingClone/ConsoleApp1/bin/Release/netcoreapp2.0/CopilotSmartEncodingClone.dll
+/Users/benjaminshapiro/Downloads/CopilotSmartEncodingClone/ConsoleApp1/bin/Release/netcoreapp2.0/CopilotSmartEncodingClone.pdb
+/Users/benjaminshapiro/Downloads/CopilotSmartEncodingClone/ConsoleApp1/obj/Release/netcoreapp2.0/TestProgram.csprojResolveAssemblyReference.cache
+/Users/benjaminshapiro/Downloads/CopilotSmartEncodingClone/ConsoleApp1/obj/Release/netcoreapp2.0/TestProgram.csproj.CoreCompileInputs.cache
+/Users/benjaminshapiro/Downloads/CopilotSmartEncodingClone/ConsoleApp1/obj/Release/netcoreapp2.0/TestProgram.AssemblyInfoInputs.cache
+/Users/benjaminshapiro/Downloads/CopilotSmartEncodingClone/ConsoleApp1/obj/Release/netcoreapp2.0/TestProgram.AssemblyInfo.cs
+/Users/benjaminshapiro/Downloads/CopilotSmartEncodingClone/ConsoleApp1/obj/Release/netcoreapp2.0/TestProgram.dll
+/Users/benjaminshapiro/Downloads/CopilotSmartEncodingClone/ConsoleApp1/obj/Release/netcoreapp2.0/TestProgram.pdb

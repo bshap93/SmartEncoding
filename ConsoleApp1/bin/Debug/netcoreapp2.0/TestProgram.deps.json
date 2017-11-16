@@ -1,0 +1,62 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.0",
+    "signature": "30b30ce4d91bc365c3d2787d7fea1509c0f178c7"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.0": {
+      "TestProgram/1.0.0": {
+        "dependencies": {
+          "CopilotSmartEncodingClone": "1.0.0",
+          "Mediaburst.Text.GSMEncoding": "1.0.0",
+          "Unidecode.NET": "1.1.1"
+        },
+        "runtime": {
+          "TestProgram.dll": {}
+        }
+      },
+      "Mediaburst.Text.GSMEncoding/1.0.0": {
+        "runtime": {
+          "lib/net40/Mediaburst.Text.dll": {}
+        }
+      },
+      "Unidecode.NET/1.1.1": {
+        "runtime": {
+          "lib/netstandard1.2/Unidecode.NET.dll": {}
+        }
+      },
+      "CopilotSmartEncodingClone/1.0.0": {
+        "runtime": {
+          "CopilotSmartEncodingClone.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TestProgram/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mediaburst.Text.GSMEncoding/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gqPFw3oVpoXhdsroj+w1dL/hn5B0Zdpvv4zdmTflWTLliYZ5N5oiCVZ8w6aboSYes7C/wAwK4URVbiDcmycyng==",
+      "path": "mediaburst.text.gsmencoding/1.0.0",
+      "hashPath": "mediaburst.text.gsmencoding.1.0.0.nupkg.sha512"
+    },
+    "Unidecode.NET/1.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zhgC3PISj6/0P4Bj9XelV4WtPrsSv83O81sqW1zvReTF5gekVmn94B5luC5SbeQno4vWAFT+OfWcRihD7YskuA==",
+      "path": "unidecode.net/1.1.1",
+      "hashPath": "unidecode.net.1.1.1.nupkg.sha512"
+    },
+    "CopilotSmartEncodingClone/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
