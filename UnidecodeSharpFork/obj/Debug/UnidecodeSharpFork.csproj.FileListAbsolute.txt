@@ -1,5 +1,0 @@
-C:\Users\BenShapiro\Documents\unidecodesharpfork\UnidecodeSharpFork\bin\Debug\UnidecodeSharpFork.pdb
-C:\Users\BenShapiro\Documents\unidecodesharpfork\UnidecodeSharpFork\obj\Debug\UnidecodeSharpFork.csprojResolveAssemblyReference.cache
-C:\Users\BenShapiro\Documents\unidecodesharpfork\UnidecodeSharpFork\obj\Debug\UnidecodeSharpFork.csproj.CoreCompileInputs.cache
-C:\Users\BenShapiro\Documents\unidecodesharpfork\UnidecodeSharpFork\obj\Debug\UnidecodeSharpFork.dll
-C:\Users\BenShapiro\Documents\unidecodesharpfork\UnidecodeSharpFork\obj\Debug\UnidecodeSharpFork.pdb
