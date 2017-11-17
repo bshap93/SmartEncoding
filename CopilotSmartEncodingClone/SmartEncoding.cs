@@ -281,10 +281,9 @@ namespace CopilotSmartEncodingClone
 
         private static bool CheckIfCharacterIsInCopilot(char character)
         {
-            foreach (KeyValuePair<char, string> entry in UnicodesToCharacters)
+            foreach (char key in UnicodesToCharacters.Keys)
             {
-                char unicode =  entry.Key;
-                if (character == unicode)
+                if (character == key)
                 {
                     return true;
                 }
@@ -295,26 +294,23 @@ namespace CopilotSmartEncodingClone
 
         private static string ReplaceWithGSM(string theString)
         {
-            
-            //String[] substrings = theString.Split(new string[] { "" }, StringSplitOptions.None);
-            foreach (char c in theString)
+
+            char[] chars = theString.ToCharArray();
+            for (int i = 0;  i < chars.Length; i++) //(char c in theString)
             {
-                if (CheckIfCharacterIsInCopilot(c))
+                if (CheckIfCharacterIsInCopilot(chars[i]))
                 {
                     
-                    theString = theString.Replace(c.ToString(), UnicodesToCharacters[c]);
+                    theString = theString.Replace(chars[i].ToString(), UnicodesToCharacters[chars[i]]);
                 }
             }
-            //string result = "";
-            //foreach (string substring in substrings)
-            //{
-            //    result += substring;
-            //}
 
             return theString;
 
 
         }
+
+
 
 
         private static string LatinToAscii(string InString)
