@@ -6,6 +6,141 @@ namespace CopilotSmartEncodingClone
 {
     public class SmartEncoding
     {
+        public static readonly List<string> GSMCharacters = new List<string>
+        {
+            "@",
+            "£",
+            "$",
+            "¥",
+            "è",
+            "é",
+            "ù",
+            "ì",
+            "ò",
+            "Ç",
+            "Ø",
+            "ø",
+            "Å",
+            "å",
+            "Δ",
+            "_",
+            "Φ",
+            "Γ",
+            "Λ",
+            "Ω",
+            "Π",
+            "Ψ",
+            "Σ",
+            "Θ",
+            "Ξ",
+            "^",
+            "{",
+            "}",
+            "[",
+            "~",
+            "]",
+            "|",
+            "€",
+            "Æ",
+            "æ",
+            "ß",
+            "É",
+            "!",
+            "#",
+            "¤",
+            "%",
+            "&",
+            "'",
+            "(",
+            ")",
+            "*",
+            "+",
+            ",",
+            "-",
+            ".",
+            "/",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            ":",
+            ";",
+            "<",
+            "=",
+            ">",
+            "?",
+            "¡",
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V",
+            "W",
+            "X",
+            "Y",
+            "Z",
+            "Ä",
+            "Ö",
+            "Ñ",
+            "Ü",
+            "§",
+            "¿",
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g",
+            "h",
+            "i",
+            "j",
+            "k",
+            "l",
+            "m",
+            "n",
+            "o",
+            "p",
+            "q",
+            "r",
+            "s",
+            "t",
+            "u",
+            "v",
+            "w",
+            "x",
+            "y",
+            "z",
+            "ä",
+            "ö",
+            "ñ",
+            "ü",
+            "à"
+        };
+         
         public static readonly Dictionary<char, string> UnicodesToCharacters
             = new Dictionary<char, string>
         {
@@ -292,6 +427,19 @@ namespace CopilotSmartEncodingClone
             return false;
         }
 
+        private static bool CheckIfCharacterIsInGSM(string subStr)
+        {
+            for (var i = 0; i < GSMCharacters.Count; i++)
+            {
+                if (subStr == GSMCharacters[i])
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
         private static string ReplaceWithGSM(string theString)
         {
 
@@ -313,7 +461,7 @@ namespace CopilotSmartEncodingClone
 
 
 
-        private static string LatinToAscii(string InString)
+        private static string LatinToGSM(string InString)
         {
             string newString = string.Empty, charString;
             char ch;
@@ -322,8 +470,16 @@ namespace CopilotSmartEncodingClone
             for (int i = 0; i < InString.Length; i++)
             {
                 charString = InString.Substring(i, 1);
-                charString = charString.Normalize(NormalizationForm.FormKD);
 
+
+                if (CheckIfCharacterIsInGSM(charString))
+                {
+                    newString += charString;
+                    continue;
+                }
+                else
+                    charString = charString.Normalize(NormalizationForm.FormKD);
+                
                 if (charString.Length == 1)
                     newString += charString;
                 else
@@ -351,7 +507,7 @@ namespace CopilotSmartEncodingClone
         public static string NormalizeText(string text)
         {
             text = ReplaceWithGSM(text);
-            text = LatinToAscii(text);
+            text = LatinToGSM(text);
 
             return text;
         }
